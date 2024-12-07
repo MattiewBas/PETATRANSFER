@@ -3,63 +3,86 @@
   <head>
     <style>
       body {
-        background-color: white;
+        background-color: whitesmoke;
         overflow-x: hidden;
       }
 
+      /* UI */
+        
       .NavControls {
-        width: 1904px;
-        height: 50px;
+        width: 1990px;
+        height: 55px;
         background-color: black;
         position: relative;
         left: -9px;
         top: -9px;
+        padding-left: auto;
+        padding-right: auto;
+        
       }
 
-      #login {
-        width: 70px;
-        height: 30px;
+      #About {
+        width: 80px;
+        height: 25px;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         position: relative;
-        top: 9px;
-        left: 3px;
-
+        left: 10px;
+        top: 15px;
       }
 
-      #signup {
+      #Profile {
         width: 80px;
         height: 30px;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         position: relative;
-        left: 93px;
-        top: -21px;
+        left: 1780px;
+        top: -15px;
       }
 
-      #Abstract {
+      /* Content */
+        
+      #Article1 {
         font-size: 30px;
-        width: 90%;
+        width: 40%;
         height: auto;
         position: relative;
         top: 10px;
         left: 60px;
         padding-left: 20px;
         padding-right: 20px;
-        
-
+        border: 2px solid black;
+        background-color: white;
       }
 
-      #Introduction {
+      #Article2 {
         font-size: 30px;
-        width: 90%;
+        width: 43%;
         height: auto;
         position: relative;
-        top: 30px;
-        left: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        top: -600px;
+        left: 900px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 2px solid black;
+        background-color: white;
       }
+
+      #Article3 {
+        font-size: 30px;
+        width: 760px;
+        height: auto;
+        position: relative;
+        top: -800px;
+        left: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 2px solid black;
+        background-color: white;
+      }
+
+      /* Links and Misc */
 
       a {
         color: white;
@@ -67,84 +90,104 @@
       }
 
       a:hover {
-        font-size: 30px;
+        text-decoration: underline;
       }
 
-      #Slogan {
-        font-size: 20px;
-        color: black;
-        text-align: center;
-        width: 90%;
-        height: 400px;
-        position: relative;
-        left: 90px;
-        top: -20px;
-        background-image: url("ImageAssets/ploane.jpg");
-        background-position: center;
-      }
-
-      #sl {
-        position: relative;
-        top: 150px;
-      }
-
-      #ds {
-        position: relative;
-        top: 0px;
-        font-size: 40px;
-      }
-      
-      #HomeSreet {
+      #HomeScreen {
         margin-left: auto;
         margin-right: auto;
       }
 
-      #Home {
-        width: 80px;
-        height: 30px;
-        text-align: center;
+      #Palawan {
+        position: relative; 
+        font-size:30px;
+        width: 110px;
+      }
+
+      #PalawanLink {
         font-size: 20px;
         position: relative;
-        left: 1800px;
-        top: -50px;
+        top: -10px;
+      }
+
+      #PalawanLink:hover {
+        font-size: 30px;
+      }
+
+      #ManilaLink {
+        font-size: 20px;
+      }
+
+      #ManilaLink:hover {
+        font-size: 30px;
+      }
+
+      #CagayanLink {
+        font-size: 20px;
+      }
+
+      #CagayanLink:hover {
+        font-size: 30px;
+      }
+
+      #Article1:hover {
+        background-color: aliceblue;
+      }
+        
+      #Article2:hover {
+        background-color: aliceblue;
+      }
+        
+      #Article3:hover {
+        background-color: aliceblue;
       }
 
     </style>
-    <title> TOURISTICA | ABOUT  </title>
+    <title> TOURISTICA | HOME  </title>
   </head>
   <body >
     <nav class="NavControls"> <!-- Menu class-->
-      <div id="login">
-        <a href="Login.html"> LOGIN </a>
+      <div id="About">
+        <a href="Main.html"> ABOUT </a>
       </div>
-      <div id="signup">
-        <a href="Signup.html"> SIGNUP </a>
-      </div>
-      <div id="Home">
-        <a href="home.html"> HOME </a>
+      <div id="Profile">
+        <a href="SubDomains/profile"> PROFILE </a>
       </div>
     </nav>
 
-    <div id="Slogan">
-      <h1 id="sl"> TOURISTICA, AT YOUR SERVICE. </h1>
-      <p id="ds"> <i> The place where tourism is even possible. </i> </p>
-    </div>
-
     <article class="HomeScreen">
-      <div id="Abstract">
-        <p> What is TOURISTICA? </p>
+      <div id="Article1">
+        <h1 id="Palawan"> Palawan </h1>
+        <a id="PalawanLink" href="SubDomains/Palawan.html" style="color: black;"> EXPLORE </a>
+        <img id="PBGM" src="ImageAssets/PalawanBGM.jpg" width="750" height="400">
         <p>
-          From the pristine shores of Palawan, to the bustling thoroughfares of Manila, and the majestic rice terraces of Banaue that rise, the diverse landscapes offer a myriad of delights for every traveler. Whether thou art a seeker of thrills, eager to delve into the world-renowned waters for surfing and diving, or a connoisseur of culture, seeking to explore the storied past and vibrant traditions, Touristica shall serve as thou map that behold the beauty within the islands.
+          Discover the heart and soul of the Philippines on the pristine white beaches and dramatic rock formations of Palawan. This island province is an adventurer’s dream, 
+          bursting with exotic flora and fauna, primeval caves, and secluded beaches.
+          From exploring indigenous settlements to kayaking among limestone cliffs, Palawan offers endless opportunities for adventure.
         </p>
       </div>
-      <div id="Introduction">
+      <div id="Article2">
+        <h1 style="position: relative; left: 0px; font-size:30px;"> Manila City</h1>
+        <a id="ManilaLink" href="SubDomains/Manila.html" style="color: black;"> EXPLORE </a>
+        <img src="ImageAssets/MBGM.jpg" width="750" height="400">
         <p>
-          Though may wonder, why TOURISTICA? From the waves that greet, from the heights that seek. The views that rivals those of belonging to the canvas, each step one takes, memories shall create. Touristica, the way of to tourism. Tailor the path not alone from ones desire, but also fuel the desire to explore the unseen. Be us the window that one can peek. Let thy curiosity seek, the culture we bare.
+          Manila serves as the center of culture, economy, education, and government in the Philippines. It is the most populous region of the country and one of the most densely populated in the world.
+          It is also the main gateway for international travelers going to the Philippines by flight. When you say “Manila,” it can mean two things. First, it can refer to the City of Manila, the capital of the Philippines.
+          Manila is made up of 16 administrative districts, including Binondo, Ermita, Intramuros, Malate, and Quiapo, among others.
+        </p>
+      </div>
+      <div id="Article3">
+        <h1 style="position: relative; left: 0px; font-size:30px;"> Cagayan </h1>
+        <a href="SubDomains/Cagayan.html" id="CagayanLink" style="color: black;"> EXPLORE </a>
+        <img src="ImageAssets/Cagayan.png" width="750" height="400">
+        <p>
+          Cagayan is a province in the Philippines situated in the Cagayan Valley region occupying the northeastern section of Luzon. Its capital is the City of Tuguegarao.
+          The province has a land area of 9,398.07 square kilometers or 3,628.62 square miles. Its population as determined by the 2020 Census was 1,268,603.
+          This represented 34.42% 
+          of the total population of the Cagayan Valley region, 2.04% of the overall population of the Luzon island group, or 1.16% of the entire population of the Philippines.
+          Based on these figures, the population density is computed at 135 inhabitants per square kilometer or 350 inhabitants per square mile.
         </p>
       </div>
     </article>
-    <main>
-
-    </main>
   </body>
 </html>
