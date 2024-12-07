@@ -3,60 +3,46 @@
   <head>
     <style>
       body {
-        background-color: white;
+        background-color: whitesmoke;
         overflow-x: hidden;
       }
 
+      /* UI */
+        
       .NavControls {
         width: 1990px;
-        height: 50px;
+        height: 55px;
         background-color: black;
         position: relative;
         left: -9px;
         top: -9px;
+        padding-left: auto;
+        padding-right: auto;
+        
       }
 
-      #login {
-        width: 70px;
-        height: 30px;
+      #About {
+        width: 80px;
+        height: 25px;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         position: relative;
-        top: 9px;
-        left: 3px;
+        left: 10px;
+        top: 15px;
       }
 
-      #Search {
-        width: 70px;
-        height: 30px;
-        text-align: center;
-        font-size: 20px;
-        position: relative;
-        top: 9px;
-        left: 94px;
-        background-color: white;
-      }
-
-      #signup {
+      #Profile {
         width: 80px;
         height: 30px;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
         position: relative;
-        left: 93px;
-        top: -21px;
+        left: 1780px;
+        top: -15px;
       }
 
-      #Main {
-        width: 80px;
-        height: 30px;
-        text-align: center;
-        font-size: 20px;
-        position: relative;
-        left: 1810px;
-        top: -50px;
-      }
-
+      /* Content */
+        
       #Article1 {
         font-size: 30px;
         width: 40%;
@@ -66,6 +52,8 @@
         left: 60px;
         padding-left: 20px;
         padding-right: 20px;
+        border: 2px solid black;
+        background-color: white;
       }
 
       #Article2 {
@@ -73,31 +61,28 @@
         width: 43%;
         height: auto;
         position: relative;
-        top: 30px;
-        left: 60px;
+        top: -600px;
+        left: 900px;
         padding-left: 20px;
         padding-right: 20px;
+        border: 2px solid black;
+        background-color: white;
       }
 
       #Article3 {
         font-size: 30px;
-        width: 43%;
+        width: 760px;
         height: auto;
         position: relative;
-        top: 70px;
+        top: -800px;
         left: 50px;
         padding-left: 20px;
         padding-right: 20px;
+        border: 2px solid black;
+        background-color: white;
       }
-      #Article1:hover {
-        background-color: aliceblue;
-      }
-      #Article2:hover {
-        background-color: aliceblue;
-      }
-      #Article3:hover {
-        background-color: aliceblue;
-      }
+
+      /* Links and Misc */
 
       a {
         color: white;
@@ -105,41 +90,16 @@
       }
 
       a:hover {
-        font-size: 30px;
+        text-decoration: underline;
       }
 
-      
       #HomeScreen {
         margin-left: auto;
         margin-right: auto;
       }
 
-      #Rankings {
-        position:relative;
-        width: 800px;
-        height: 600px;
-        border: 2px solid black;
-        font-size: 20px;
-        left: 1050px;
-        top: -2600px;
-        background-color: rgb(202, 229, 233);
-      }
-
-      #FSL {
-        position: relative;
-        top: -174px;
-        left:350px;
-      }
-
-      #FS {
-        position: relative;
-        top: -173px;
-        left: 350px;
-      }
-
       #Palawan {
         position: relative; 
-        left: 80px; 
         font-size:30px;
         width: 110px;
       }
@@ -147,7 +107,6 @@
       #PalawanLink {
         font-size: 20px;
         position: relative;
-        left: 80px;
         top: -10px;
       }
 
@@ -171,16 +130,16 @@
         font-size: 30px;
       }
 
-      #HistoricalSights {
-        position: relative;
-        top: -180px;
-        left: 10px;
+      #Article1:hover {
+        background-color: aliceblue;
       }
-
-      #HS {
-        position: relative;
-        left: 1px;
-        top: -179px;
+        
+      #Article2:hover {
+        background-color: aliceblue;
+      }
+        
+      #Article3:hover {
+        background-color: aliceblue;
       }
 
     </style>
@@ -188,26 +147,18 @@
   </head>
   <body >
     <nav class="NavControls"> <!-- Menu class-->
-      <div id="login">
-        <a href="login.html"> LOGIN </a>
-      </div>
-      <div id="signup">
-        <a href="signup.html"> SIGNUP </a>
-      </div>
-      <div id="Main">
+      <div id="About">
         <a href="Main.html"> ABOUT </a>
       </div>
-      <div id="Search">
-        <form>
-
-        </form>
+      <div id="Profile">
+        <a href="SubDomains/profile"> PROFILE </a>
       </div>
     </nav>
 
     <article class="HomeScreen">
-      <h1 id="Palawan"> Palawan </h1>
-      <a id="PalawanLink" href="SubDomains/Palawan.html" style="color: black;"> INQUIRE NOW </a>
       <div id="Article1">
+        <h1 id="Palawan"> Palawan </h1>
+        <a id="PalawanLink" href="SubDomains/Palawan.html" style="color: black;"> EXPLORE </a>
         <img id="PBGM" src="ImageAssets/PalawanBGM.jpg" width="750" height="400">
         <p>
           Discover the heart and soul of the Philippines on the pristine white beaches and dramatic rock formations of Palawan. This island province is an adventurer’s dream, 
@@ -217,18 +168,17 @@
       </div>
       <div id="Article2">
         <h1 style="position: relative; left: 0px; font-size:30px;"> Manila City</h1>
-        <a id="ManilaLink" href="SubDomains/Manila.html" style="color: black;"> INQUIRE NOW </a>
+        <a id="ManilaLink" href="SubDomains/Manila.html" style="color: black;"> EXPLORE </a>
         <img src="ImageAssets/MBGM.jpg" width="750" height="400">
         <p>
           Manila serves as the center of culture, economy, education, and government in the Philippines. It is the most populous region of the country and one of the most densely populated in the world.
           It is also the main gateway for international travelers going to the Philippines by flight. When you say “Manila,” it can mean two things. First, it can refer to the City of Manila, the capital of the Philippines.
-          Manila is made up of 16 administrative districts, including Binondo, Ermita, Intramuros, Malate, and Quiapo, among others. Second, the greater Metropolitan Manila area is also referred to as Manila. It is officially known as the National Capital Region (NCR) or Metro Manila.
-          It is made up of the City of Manila, Makati, Quezon City, Parañaque, Pasay, and Taguig, to name a few.
+          Manila is made up of 16 administrative districts, including Binondo, Ermita, Intramuros, Malate, and Quiapo, among others.
         </p>
       </div>
       <div id="Article3">
         <h1 style="position: relative; left: 0px; font-size:30px;"> Cagayan </h1>
-        <a href="SubDomains/Cagayan.html" id="CagayanLink" style="color: black;"> INQUIRE NOW </a>
+        <a href="SubDomains/Cagayan.html" id="CagayanLink" style="color: black;"> EXPLORE </a>
         <img src="ImageAssets/Cagayan.png" width="750" height="400">
         <p>
           Cagayan is a province in the Philippines situated in the Cagayan Valley region occupying the northeastern section of Luzon. Its capital is the City of Tuguegarao.
@@ -238,34 +188,6 @@
           Based on these figures, the population density is computed at 135 inhabitants per square kilometer or 350 inhabitants per square mile.
         </p>
       </div>
-    </article>
-
-    <article id="Rankings">
-      <h1 style="text-align: center;"> SITE RANKINGS (BY CATEGORY) </h1>
-      <p id="PR"> Province/Region </p> <!-- Provinces and regions-->
-      <ul>
-        <li> Pampanga </li>
-        <li> Siargao </li>
-        <li> Cebu </li>
-        <li> Bohol </li>
-        <li> Palawan </li>
-      </ul>
-      <p id="FS"> Foods And Souvenirs </p> <!-- Food and souviners-->
-      <ul id="FSL">
-        <li> Adobo </li>
-        <li> Sinigang </li>
-        <li> Sisig </li>
-        <li> Lechon </li>
-        <li> Kare-kare </li>
-      </ul>
-      <p style="position: relative; top: -164px;;"> ------------------------------------------------------------------------------------------------------------------------</p>
-      <p id="HistoricalSights"> Historical Sights </p>
-      <ul id="HS">
-        <li> Fort Santiago </li>
-        <li> Rizal Park </li>
-        <li> Fort San Pedro </li>
-        <li> Intramuros </li>
-      </ul>
     </article>
   </body>
 </html>
